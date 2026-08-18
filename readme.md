@@ -78,15 +78,15 @@ format you're using (`configurate-yaml`, `configurate-hocon`, etc.).
 
 ```kotlin
 repositories {
-  maven("https://repo.bytephoria.team/releases")
+  maven("https://jitpack.io")
 }
 
 dependencies {
   // Core only: build SignalDefinitions by hand, no Configurate dependency
-  implementation("team.bytephoria:signal:1.0.0")
+  implementation("com.github.Bytephoria.signal:signal:v1.0.0")
 
   // Config-driven signal definitions (includes signal transitively)
-  implementation("team.bytephoria:configurate:1.0.0")
+  implementation("com.github.Bytephoria.signal:configurate:v1.0.0")
 
   // Pick the loader for your format
   implementation("org.spongepowered:configurate-yaml:4.2.0")
